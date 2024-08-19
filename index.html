@@ -1,13 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <script src="index.js"></script>
-  </body>
+<html>
+<head>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.news-feed {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.news-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.news-date {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.news-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.newsletter {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.newsletter-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.newsletter-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-copyright {
+  font-size: 0.8em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  margin: 0 5px;
+  color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">
+      <img src="https://www.campusconnect.com/images/logo.png" alt="Campus Connect Logo">
+      <h1>CampusConnect</h1>
+    </div>
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Campus News</a></li>
+      <li><a href="#">Event Calendar</a></li>
+      <li><a href="#">Resource Sharing</a></li>
+      <li><a href="#">Study Group</a></li>
+      <li>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82 1.65 1.65 0 0 0 1.82 .33l.06.06a2 2 0 0 1 2.83 0l.06-.06a1.65 1.65 0 0 0 1.82-.33 1.65 1.65 0 0 0 .33-1.82l-.06-.06a2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0-.33-1.82 1.65 1.65 0 0 0-1.82-.33l-.06-.06a2 2 0 0 1-2.83 0l-.06.06a1.65 1.65 0 0 0-1.82 .33 1.65 1.65 0 0 0-.33 1.82l.06.06a2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0 .33 1.82"></path></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="https://www.campusconnect.com/images/user.png" alt="User Avatar">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2 style="text-align: center;">Campus News Feed</h2>
+  </div>
+
+  <div class="news-feed">
+    <div class="news-item">
+      <h3 class="news-title">New Library Opens</h3>
+      <p class="news-date">Published: Oct 1, 2023</p>
+      <p>A new library has opened on campus with state-of-the-art facilities and a vast collection of books.</p>
+      <img class="news-image" src="https://www.campusconnect.com/images/library.jpg" alt="New Library Image">
+    </div>
+
+    <div class="news-item">
+      <h3 class="news-title">Guest Lecture</h3>
+      <p class="news-date">Published: Oct 2, 2023</p>
+      <p>Renowned scientist Dr. Jane Smith will be giving a guest lecture on climate change this Friday.</p>
+      <img class="news-image" src="https://www.campusconnect.com/images/lecture.jpg" alt="Guest Lecture Image">
+    </div>
+
+    <div class="news-item">
+      <h3 class="news-title">Sports Day</h3>
+      <p class="news-date">Published: Oct 5, 2023</p>
+      <p>Join us for the annual sports day with various activities including basketball, soccer, and track events.</p>
+      <img class="news-image" src="https://www.campusconnect.com/images/sports.jpg" alt="Sports Day Image">
+    </div>
+
+    <div class="news-item">
+      <h3 class="news-title">New Cafeteria Menu</h3>
+      <p class="news-date">Published: Oct 6, 2023</p>
+      <p>The cafeteria has introduced a new menu with a variety of healthy and delicious options for all students.</p>
+      <img class="news-image" src="https://www.campusconnect.com/images/cafeteria.jpg" alt="New Cafeteria Menu Image">
+    </div>
+
+    <div class="news-item">
+      <h3 class="news-title">Art Exhibition</h3>
+      <p class="news-date">Published: Oct 7, 2023</p>
+      <p>Don't miss the annual art exhibition showcasing works from talented students across various disciplines.</p>
+      <img class="news-image" src="https://www.campusconnect.com/images/art.jpg" alt="Art Exhibition Image">
+    </div>
+
+    <div class="news-item">
+      <h3 class="news-title">Blood Donation Camp</h3>
+      <p class="news-date">Published: Oct 8, 2023</p>
+      <p>A blood donation camp will be held on campus next week. Students are encouraged to participate and donate blood.</p>
+      <img class="news-image" src="https://www.campusconnect.com/images/blood.jpg" alt="Blood Donation Camp Image">
+    </div>
+  </div>
+
+  <div class="newsletter">
+    <h3 class="newsletter-title">Subscribe to our newsletter</h3>
+    <form class="newsletter-form">
+      <input type="email" class="newsletter-input" placeholder="Input your email">
+      <button class="newsletter-button">Subscribe</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">About us</a>
+      <a href="#">Features</a>
+      <a href="#">Help Center</a>
+      <a href="#">Contact us</a>
+      <a href="#">FAQs</a>
+      <a href="#">Careers</a>
+    </div>
+    <div class="footer-copyright">
+      © 2023 Brand - Privacy - Terms - Sitemap
+    </div>
+    <div class="social-links">
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube"><path d="M22.54 6.44a11.05 11.05 0 0 1-9.9 9.9h.04a11 11 0 0 1-9.82-9.82V6.44M14.7 12.7a2.2 2.2 0 0 0-2.2 2.2v.04a2.2 2.2 0 0 0 2.2 2.2h.04a2.2 2.2 0 0 0 2.2-2.2v-.04a2.2 2.2 0 0 0-2.2-2.2z"></path></svg></a>
+    </div>
+  </footer>
+</div>
+</body>
 </html>
