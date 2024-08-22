@@ -6,10 +6,11 @@ body {
 }
 
 .container {
-  /*max-width: 1200px;*/
   width: 90vw;
   margin: 0 auto;
-  padding: 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -21,6 +22,7 @@ body {
   background-color: #fff;
   padding: 10px 20px;
   margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
 }
 
 .logo {
@@ -31,11 +33,15 @@ body {
 .logo img {
   height: 80px;
   margin-right: 10px;
+  border-radius: 50%;
 }
 
 .avatar {
   height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
+
 .nav {
   display: flex;
   list-style: none;
@@ -50,6 +56,11 @@ body {
 .nav a {
   text-decoration: none;
   color: #333;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #007bff;
 }
 
 .news-feed {
@@ -73,6 +84,7 @@ body {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 5px;
+  color: #333;
 }
 
 .news-date {
@@ -89,6 +101,7 @@ body {
   margin-left: 10px;
   top: -100px;
   position: relative;
+  border-radius: 5px;
 }
 
 .newsletter {
@@ -103,6 +116,7 @@ body {
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .newsletter-form {
@@ -126,6 +140,11 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.newsletter-button:hover {
+  background-color: #0069d9;
 }
 
 .footer {
@@ -133,6 +152,7 @@ body {
   color: #fff;
   padding: 20px;
   text-align: center;
+  clear: both;
 }
 
 .footer-links {
@@ -145,10 +165,16 @@ body {
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #ccc;
 }
 
 .footer-copyright {
   font-size: 0.8em;
+  color: #666;
 }
 
 .social-links {
@@ -159,4 +185,9 @@ body {
 .social-links a {
   margin: 0 5px;
   color: #fff;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #ccc;
 }
