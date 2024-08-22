@@ -29,10 +29,13 @@ body {
 }
 
 .logo img {
-  height: 30px;
+  height: 80px;
   margin-right: 10px;
 }
 
+.avatar {
+  height: 20px;
+}
 .nav {
   display: flex;
   list-style: none;
