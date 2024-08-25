@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect Event Calendar</title>
+    <link rel='stylesheet' type='text/css' href='style\eventcalendar.css'>
+</head>
+<body>
+    <header>
+        <h1>CampusConnect Event Calendar</h1>
+    </header>
+    <main>
+        <section class="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>
+                    <h3>Art Exhibition</h3>
+                    <p>November 15, 2023, 3 PM - 5 PM, Student Union Building</p>
+                    <p>Come and explore the artistic talents of our students at the Art Exhibition.</p>
+                </li>
+                <li>
+                    <h3>Tech Workshop</h3>
+                    <p>November 18, 2023, 10 AM - 2 PM, Computer Science Building</p>
+                    <p>Learn about the latest trends in technology and develop your skills at our Tech Workshop.</p>
+                </li>
+                <li>
+                    <h3>Music Concert</h3>
+                    <p>November 21, 2023, 7 PM - 9 PM, Auditorium</p>
+                    <p>Enjoy an evening of music and entertainment at our Music Concert.</p>
+                </li>
+                <li>
+                    <h3>Career Fair</h3>
+                    <p>November 25, 2023, 1 PM - 4 PM, Student Union Building</p>
+                    <p>Meet with top companies and learn about job opportunities at our Career Fair.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="past-events">
+            <h2>Past Events</h2>
+            <ul>
+                <li>
+                    <h3>Halloween Party</h3>
+                    <p>October 28, 2023, 8 PM - 12 AM, Student Union Building</p>
+                    <p>We had a spook-tacular time at our Halloween Party!</p>
+                </li>
+                <li>
+                    <h3>Guest Lecture</h3>
+                    <p>October 22, 2023, 2 PM - 4 PM, Lecture Hall</p>
+                    <p>We were honored to have Dr. Jane Smith speak to us about her research in the field of biology.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="recurring-events">
+            <h2>Recurring Events</h2>
+            <ul>
+                <li>
+                    <h3>Weekly Study Group</h3>
+                    <p>Every Wednesday, 3 PM - 5 PM, Library</p>
+                </li>
+                <li>
+                    <h3>Fitness Classes</h3>
+                    <p>Every Monday, Wednesday, Friday, 7 AM - 8 AM, Gym</p>
+                </li>
+                <li>
+                    <h3>Club Meetings</h3>
+                    <p>Various times and locations, check with club leaders for details</p>
+                </li>
+            </ul>
+        </section>
+        <section class="submit-event">
+            <h2>Submit an Event</h2>
+            <form>
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name"><br><br>
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" name="event-date"><br><br>
+                <label for="event-time">Time:</label>
+                <input type="time" id="event-time" name="event-time"><br><br>
+                <label for="event-location">Location:</label>
+                <input type="text" id="event-location" name="event-location"><br><br>
+                <label for="event-description">Description:</label>
+                <textarea id="event-description" name="event-description"></textarea><br><br>
+                <input type="submit" value="Submit Event">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 CampusConnect</p>
+    </footer>
+</body>
+</html>
