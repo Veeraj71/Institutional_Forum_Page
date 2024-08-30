@@ -28,7 +28,7 @@ body {
   /* Optional: Adjust font size to match other header buttons */
   font-size: 1rem;
   position: relative; /* Set position to relative */
-  top: -5px; /* Shift the button 10px upwards */
+  top: -9px; /* Shift the button 10px upwards */
   margin-right: 10px; /* Shift the button 10px to the left */
 }
 
