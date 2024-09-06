@@ -15,7 +15,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-<<<<<<< Updated upstream
 .sign-in {
   padding: 10px 15px;
   background-color: #007bff;
@@ -35,34 +34,21 @@ body {
 }
 
 
-=======
-/* Header Styling */
->>>>>>> Stashed changes
 .header {
   display: flex;
   width: 100%;
   height: 100px;
   justify-content: space-between;
-<<<<<<< Updated upstream
   background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Blur effect */
   align-items: center; /* Center items vertically */
-=======
-  align-items: center;
-  background-color: #444444; /* Darker gray header background */
->>>>>>> Stashed changes
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
   margin-bottom: 20px;
-<<<<<<< Updated upstream
   border-bottom: 1px solid #eee;
   padding: 0 20px; /* Padding for left and right sides */
-=======
-  border-bottom: 2px solid #666666; /* Medium gray border */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Slight shadow for header */
->>>>>>> Stashed changes
 }
 
 .logo {
@@ -98,7 +84,7 @@ body {
 
 .nav a {
   text-decoration: none;
-  color: #e0e0e0; /* Light gray text color for nav links */
+  color: #2b2b2b; /* Light gray text color for nav links */
   font-weight: bold;
   transition: color 0.2s ease;
 }
@@ -189,7 +175,7 @@ body {
 
 .newsletter-button {
   padding: 12px 20px;
-  background-color: #777777; /* Medium gray button */
+  background-color: #007bff; /* Medium gray button */
   color: #ffffff; /* Light button text color */
   border: none;
   border-radius: 5px;
@@ -204,7 +190,7 @@ body {
 
 /* Footer Styling */
 .footer {
-  background-color: #444444; /* Darker gray footer background */
+  background-color: #2b2b2b; /* Darker gray footer background */
   color: #f7f7f7; /* Light text color */
   padding: 20px;
   text-align: center;
