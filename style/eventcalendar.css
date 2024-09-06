@@ -7,11 +7,97 @@ body {
   color: #333;
 }
 
+body {
+  font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Light neutral background */
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  top: 60px;
+  background-color: #ffffff; /* White container background */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.sign-in {
+  padding: 10px 15px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff !important; 
+  text-decoration: none; 
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex; /* button's content alignment */
+  align-items: center; /* Align content inside the button */
+  font-size: 1rem;
+  position: relative; 
+  top: -9px; 
+  margin-right: 10px; 
+}
+
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  align-items: center; /* Center items vertically */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding: 0 20px; /* Padding for left and right sides */
+}
+
+/* Navigation Styling */
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #3c3c3c; /* Light gray text color for nav links */
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #000000; /* Slightly darker  on hover */
+}
+
 header {
   background-color: #0073e6;
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow around logo */
 }
 
 h1 {
@@ -121,4 +207,51 @@ footer {
 footer p {
   margin: 0;
   font-size: 0.9em;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #2b2b2b; /* Darker gray footer background */
+  color: #f7f7f7; /* Light text color */
+  padding: 20px;
+  text-align: center;
+  clear: both;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #f7f7f7; /* Light text color for links */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #cccccc; /* Slightly darker gray on hover */
+}
+
+.footer-copyright {
+  font-size: 0.85em;
+  color: #999999; /* Soft gray text */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  margin: 0 8px;
+  color: #f7f7f7; /* Light text color */
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #cccccc; /* Slightly darker gray on hover */
 }
