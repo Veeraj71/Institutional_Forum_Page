@@ -20,17 +20,16 @@ body {
   background-color: #007bff;
   border: none;
   border-radius: 5px;
-  color: #fff !important; /* Add !important to override other rules */
-  text-decoration: none; /* Remove underline from button text */
+  color: #fff !important; 
+  text-decoration: none; 
   cursor: pointer;
   transition: background-color 0.2s ease;
-  display: flex; /* Ensure the button's content aligns properly */
+  display: flex; /* button's content alignment */
   align-items: center; /* Align content inside the button */
-  /* Optional: Adjust font size to match other header buttons */
   font-size: 1rem;
-  position: relative; /* Set position to relative */
-  top: -9px; /* Shift the button 10px upwards */
-  margin-right: 10px; /* Shift the button 10px to the left */
+  position: relative; 
+  top: -9px; 
+  margin-right: 10px; 
 }
 
 
@@ -84,13 +83,13 @@ body {
 
 .nav a {
   text-decoration: none;
-  color: #2b2b2b; /* Light gray text color for nav links */
+  color: #3c3c3c; /* Light gray text color for nav links */
   font-weight: bold;
   transition: color 0.2s ease;
 }
 
 .nav a:hover {
-  color: #bbbbbb; /* Slightly darker gray on hover */
+  color: #000000; /* Slightly darker  on hover */
 }
 
 /* News Feed Styling */
