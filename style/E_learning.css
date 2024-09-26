@@ -1,0 +1,331 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Main styles */
+body {
+  margin-top: 13.5rem;
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+body::before {
+  content: "Knowledge is Power";
+  font-size: 8rem;
+  font-weight: 100;
+  font-style: normal;
+}
+
+*{margin: 0%;
+  padding: 0%;
+
+}
+.container {
+  z-index: 15;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    top: 60px;
+    background-color: #ffffff; /* White container background */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    
+  }
+  
+.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    align-items: center; /* Center items vertically */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding: 0 20px; /* Padding for left and right sides */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow around logo */
+  }
+  .nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #3c3c3c; /* Light gray text color for nav links */
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  
+  .nav a:hover {
+    color: #000000; /* Slightly darker  on hover */
+  }
+  .container-1{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    size: 100px;
+    }
+  .subject{
+    z-index: 10;
+    position: relative;
+    bottom: 600px;
+    font-size: larger;
+    color: #87CEEB;
+    opacity: 0; /* Hidden initially */
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 2s; /* Delay the animation by 1.5 seconds */
+ }   
+
+  
+  .container-2{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    size: 100px;
+  }
+  .container-3{z-index: 12;
+    position: relative;
+    display: flex;
+    gap: 200px;
+    height: 100vh;
+    justify-content: center;
+    size: 100px;
+    margin: 0%;
+    padding: 0%;
+    bottom: 1250px;
+    opacity: 0; /* Hidden initially */
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 3s; /* Delay the animation by 2 seconds */
+    
+
+  }
+  .container-4{z-index: 12;
+    position: relative;
+    display: flex;
+    gap: 150px;
+    height: 50vh;
+   justify-content: center;
+   align-items: center;
+    size: 100px;
+    
+    margin: 0%;
+    padding: 0%;
+    bottom: 2000px;
+    
+    opacity: 0; /* Hidden initially */
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 3s; /* Delay the animation by 2 seconds */
+
+  }
+  .one{
+    z-index: 11;
+  position:relative;
+   top: 105px; 
+   font-size: x-large; 
+   color: #9494ff;
+   opacity: 0; /* Make the div invisible initially */
+   animation: fadeIn 1s ease-in forwards; /* Apply the fade-in animation */
+   animation-delay: 1s; /* Delay the animation by 1 second */
+ } 
+
+  .a1{
+    background-color: aquamarine;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    line-height: 100px;
+    transition: transform 0.3s ease-in-out !important; /* Smooth transition for transform */
+    
+
+   }
+  
+  
+  
+  
+  
+  .a2{
+  background-color: aquamarine;
+  height: 100px;
+  width: 250px;
+  text-align: center;
+  line-height: 100px;
+  transition: transform 0.3s ease-in-out !important; /* Smooth transition for transform */
+  
+  }
+  
+  
+  .a3{
+    background-color: aquamarine;
+  height: 100px;
+  width: 250px;
+  text-align: center;
+  line-height: 100px;
+  transition: transform 0.3s ease-in-out !important; /* Smooth transition for transform */
+
+  }
+ 
+  
+  .b1{
+    background-color: aquamarine;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    line-height: 100px;
+    transition: transform 0.3s ease-in-out !important; /* Smooth transition for transform */
+   
+  }
+  .b2{ 
+    background-color: aquamarine;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    line-height: 100px;
+    transition: transform 0.3s ease-in-out !important; /* Smooth transition for transform */
+
+  }
+  .b3{
+    background-color: aquamarine;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    line-height: 100px;
+    transition: transform 0.3s ease-in-out !important; /* Smooth transition for transform */
+
+
+  }
+  
+  .a1:hover{
+    
+      transform: scale(1.1)!important; /* Increases the size by 10% on hover */
+    
+  }
+  
+  .a2:hover{
+    
+   transform: scale(1.1)!important; /* Increases the size by 10% on hover */
+    
+  }
+  .a3:hover{
+    transform: scale(1.1) !important; /* Increases the size by 10% on hover */
+
+  }
+  .b1:hover{
+    transform: scale(1.1) !important; /* Increases the size by 10% on hover */
+
+  }
+  .b2:hover{
+    transform: scale(1.1) !important; /* Increases the size by 10% on hover */
+
+  }
+  .b3:hover{
+    transform: scale(1.1) !important; /* Increases the size by 10% on hover */
+
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  .pyq{
+    z-index: 13;
+    position: relative;
+    bottom:2050px;
+    
+    opacity: 0; /* Hidden initially */
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 3s; /* Delay the animation by 2 seconds */
+    
+  }
+  
+  
+  
+  
+  
+  @keyframes fadeIn {
+    0% {
+        opacity: 0; /* Initially invisible */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+    }
+  }
+
