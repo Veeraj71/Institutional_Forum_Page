@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Exo:100);
+@import url(#);
 /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
 /* Animations */
 @-webkit-keyframes bg-scrolling-reverse {
@@ -54,13 +54,13 @@ body {
   text-align: center;
   /* img size is 50x50 */
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
-  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  -webkit-animation: bg-scrolling-reverse 0.5s infinite;
   /* Safari 4+ */
-  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  -moz-animation: bg-scrolling-reverse 0.5s infinite;
   /* Fx 5+ */
-  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  -o-animation: bg-scrolling-reverse 0.5s infinite;
   /* Opera 12+ */
-  animation: bg-scrolling-reverse 0.92s infinite;
+  animation: bg-scrolling-reverse 0.5s infinite;
   /* IE 10+ */
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
@@ -162,6 +162,71 @@ body::before {
     justify-content: center;
     size: 100px;
   }
+
+  .sign-in {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff !important; 
+    text-decoration: none; 
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex; /* button's content alignment */
+    align-items: center; /* Align content inside the button */
+    font-size: 1rem;
+    position: relative; 
+    top: -9px; 
+    margin-right: 10px; 
+  }
+
+  /* Footer Styling */
+.footer {
+  background-color: #2b2b2b; /* Darker gray footer background */
+  color: #f7f7f7; /* Light text color */
+  padding: 20px;
+  text-align: center;
+  clear: both;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #f7f7f7; /* Light text color for links */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #cccccc; /* Slightly darker gray on hover */
+}
+
+.footer-copyright {
+  font-size: 0.85em;
+  color: #999999; /* Soft gray text */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  margin: 0 8px;
+  color: #f7f7f7; /* Light text color */
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #cccccc; /* Slightly darker gray on hover */
+}
+
   .container-3{z-index: 12;
     position: relative;
     display: flex;
@@ -214,6 +279,7 @@ body::before {
     text-align: center;
     line-height: 100px;
     transition: transform 0.3s ease-in-out !important; /* Smooth transition for transform */
+    border-radius: 15px 50px 30px;
     
 
    }
@@ -229,7 +295,7 @@ body::before {
   text-align: center;
   line-height: 100px;
   transition: transform 0.3s ease-in-out !important; /* Smooth transition for transform */
-  
+  border-radius: 30px;
   }
   
   
@@ -240,6 +306,7 @@ body::before {
   text-align: center;
   line-height: 100px;
   transition: transform 0.3s ease-in-out !important; /* Smooth transition for transform */
+  border-radius: 15px 50px 30px;
 
   }
  
@@ -251,6 +318,7 @@ body::before {
     text-align: center;
     line-height: 100px;
     transition: transform 0.3s ease-in-out !important; /* Smooth transition for transform */
+    border-radius: 15px 50px 30px;
    
   }
   .b2{ 
@@ -260,6 +328,7 @@ body::before {
     text-align: center;
     line-height: 100px;
     transition: transform 0.3s ease-in-out !important; /* Smooth transition for transform */
+    border-radius: 30px;
 
   }
   .b3{
@@ -269,6 +338,7 @@ body::before {
     text-align: center;
     line-height: 100px;
     transition: transform 0.3s ease-in-out !important; /* Smooth transition for transform */
+    border-radius: 15px 50px 30px;
 
 
   }
