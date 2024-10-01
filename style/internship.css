@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+    background-color: #f3f4f6; /* Equivalent to bg-gray-100 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px; /* Equivalent to p-6 */
+    flex: 1; 
+    overflow-y: hidden;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    top: 60px;
+    background-color: #ffffff; /* White container background */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+
+.heading {
+    text-align: center;
+    font-size: 2.25rem; /* Equivalent to text-xls */
+    font-weight: bold;
+    margin-bottom: 32px; /* Equivalent to mb-8 */
+}
+
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    align-items: center; /* Center items vertically */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding: 0 20px; /* Padding for left and right sides */
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow around logo */
+  }
+  
+  .avatar {
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow around avatar */
+  }
+
+  /* Navigation Styling */
+.nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #3c3c3c; /* Light gray text color for nav links */
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  
+  .nav a:hover {
+    color: #000000; /* Slightly darker  on hover */
+  }
+
+  .sign-in {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff !important; 
+    text-decoration: none; 
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex; /* button's content alignment */
+    align-items: center; /* Align content inside the button */
+    font-size: 1rem;
+    position: relative; 
+    top: -9px; 
+    margin-right: 10px; 
+  }
+
+  footer {
+    background-color: #2b2b2b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100vw; /* Set width to 100% of the viewport width */
+    margin: 0; /* Remove any margin */
+    box-sizing: border-box; /* Include padding in width calculation */
+    left: 0; /* Set left position to 0 */
+    right: 0; /* Set right position to 0 */
+    position: fixed; /* Set position to fixed */
+    bottom: 0; /* Set bottom position to 0 */
+    height: auto; /* Set height to auto */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #f7f7f7; /* Light text color for links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #cccccc; /* Slightly darker gray on hover */
+  }
+  
+  .footer-copyright {
+    font-size: 0.85em;
+    color: #999999; /* Soft gray text */
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-links a {
+    margin: 0 8px;
+    color: #f7f7f7; /* Light text color */
+    transition: color 0.2s ease;
+  }
+  
+  .social-links a:hover {
+    color: #cccccc; /* Slightly darker gray on hover */
+  }
+
+/* Grid Container Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px; /* Equivalent to gap-6 */
+    width: 100%; /* Make the grid container full-width */
+    max-width: 1200px; /* Set a maximum width to prevent overflow */
+    margin: 0 auto; /* Center the grid container horizontally */
+    padding: 24px; /* Add some padding to maintain some space */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+@media (min-width: 640px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* sm:grid-cols-2 */
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+    }
+}
+
+/* Tile Styles */
+.tile {
+    background-color: #ffffff; /* Equivalent to bg-white */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-md */
+    border-radius: 8px; /* Equivalent to rounded-lg */
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    width: 100%; /* Make the tiles full-width */
+    max-width: 300px; /* Set a maximum width to prevent overflow */
+    margin: 0 auto; /* Center the tiles horizontally */
+    padding: 16px; /* Add some padding to maintain some space */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.tile:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Equivalent to hover:shadow-xl */
+    transform: scale(1.05); /* Equivalent to hover:scale-105 */
+}
+
+.tile-image {
+    width: 100%;
+    height: 128px; /* Equivalent to h-32 */
+    object-fit: fill;
+}
+
+.tile-content {
+    padding: 16px; /* Equivalent to p-4 */
+}
+
+.tile-title {
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    font-weight: bold;
+    margin-bottom: 8px; /* Equivalent to mb-2 */
+}
+
+.tile-description {
+    color: #4b5563; /* Equivalent to text-gray-600 */
+}
